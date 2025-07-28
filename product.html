@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Cora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/product.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <nav id="navbar">
+        <div class="nav-left">
+            <a href="index.html" class="logo">Cora</a>
+            <div class="hamburger" id="hamburger" aria-label="Toggle navigation menu" role="button" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html" class="active">Product</a></li>
+                <li><a href="portofolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="mobile-cta">
+                    <a href="#" class="cta-button-mobile">Mulai Belajar</a>
+                </li>
+            </ul>
+        </div>
+        <div class="cta-button-container">
+            <a href="#" class="cta-button">Mulai Belajar</a>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Kursus Coding Kami</h1>
+                <p>Temukan koleksi lengkap kursus pemrograman dan teknologi yang dirancang untuk meningkatkan karir Anda</p>
+            </div>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="filter-section">
+            <div class="container">
+                                <div class="filter-controls">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="searchInput" placeholder="Cari kursus...">
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="categoryFilter">Kategori:</label>
+                        <select id="categoryFilter">
+                            <option value="">Semua Kategori</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="levelFilter">Level:</label>
+                        <select id="levelFilter">
+                            <option value="">Semua Level</option>
+                            <option value="Beginner">Pemula</option>
+                            <option value="Intermediate">Menengah</option>
+                            <option value="Advanced">Lanjut</option>
+                            <option value="Beginner to Advanced">Pemula sampai Lanjut</option>
+                            <option value="Beginner to Intermediate">Pemula sampai Menengah</option>
+                            <option value="Intermediate to Advanced">Menengah sampai Lanjut</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="priceFilter">Rentang Harga:</label>
+                        <select id="priceFilter">
+                            <option value="">Semua Harga</option>
+                            <option value="0-2000000">Rp 0 - Rp 2.000.000</option>
+                            <option value="2000000-3000000">Rp 2.000.000 - Rp 3.000.000</option>
+                            <option value="3000000-4000000">Rp 3.000.000 - Rp 4.000.000</option>
+                            <option value="4000000+">Rp 4.000.000+</option>
+                        </select>
+                    </div>
+
+                    <button id="clearFilters" class="clear-btn">Hapus Filter</button>
+                </div>
+
+                <div class="results-info">
+                    <span id="resultsCount"></span>
+                    <div class="sort-controls">
+                        <label for="sortBy">Urutkan berdasarkan:</label>
+                        <select id="sortBy">
+                            <option value="default">Default</option>
+                            <option value="price-low">Harga: Rendah ke Tinggi</option>
+                            <option value="price-high">Harga: Tinggi ke Rendah</option>
+                            <option value="rating">Rating Tertinggi</option>
+                            <option value="students">Paling Populer</option>
+                            <option value="title">Judul A-Z</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Price Calculator Section -->
+        <section class="price-calculator-section" style="background: #f8f9fa; margin: 2rem 0; padding: 2rem 0;">
+            <div class="container">
+                <div class="calculator-header">
+                    <h3><i class="fas fa-calculator"></i> Kalkulator Harga Kursus</h3>
+                    <p>Pilih beberapa kursus untuk melihat total biaya dan diskon yang tersedia</p>
+                </div>
+                
+                <div class="calculator-content">
+                    <div class="selected-courses">
+                        <h4>Kursus Terpilih (<span id="selectedCount">0</span>)</h4>
+                        <div id="selectedCoursesList" class="selected-list">
+                            <p class="empty-message">Belum ada kursus yang dipilih</p>
+                        </div>
+                    </div>
+                    
+                    <div class="price-summary">
+                        <div class="summary-row">
+                            <span>Subtotal:</span>
+                            <span id="subtotal">Rp 0</span>
+                        </div>
+                        <div class="summary-row discount-row" id="discountRow" style="display: none;">
+                            <span>Diskon (<span id="discountPercent">0</span>%):</span>
+                            <span id="discountAmount">-Rp 0</span>
+                        </div>
+                        <div class="summary-row total-row">
+                            <span>Total:</span>
+                            <span id="totalAmount">Rp 0</span>
+                        </div>
+                        <button id="proceedCheckout" class="checkout-btn" disabled>
+                            <i class="fas fa-shopping-cart"></i>
+                            Lanjutkan ke Checkout
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Grid -->
+        <section class="products-section">
+            <div class="container">
+                <div id="productsGrid" class="products-grid">
+                    <!-- Products will be loaded here dynamically -->
+                </div>
+                
+                <div id="noResults" class="no-results" style="display: none;">
+                    <i class="fas fa-search"></i>
+                    <h3>Tidak ada kursus ditemukan</h3>
+                    <p>Coba sesuaikan filter atau kata kunci pencarian Anda</p>
+                </div>
+
+                <div id="loadingSpinner" class="loading">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Memuat kursus...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Product Detail Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle"></h2>
+                <span class="close" id="closeModal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-left">
+                    <img id="modalImage" src="" alt="">
+                    <div class="modal-video">
+                        <h4><i class="fas fa-play-circle"></i> Preview Kursus</h4>
+                        <div class="video-placeholder">
+                            <i class="fas fa-play"></i>
+                            <p>Klik untuk menonton preview</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-right">
+                    <div class="course-meta">
+                        <div class="meta-badge">
+                            <span id="modalCategory"></span>
+                        </div>
+                        <div class="rating-section">
+                            <div id="modalRating" class="stars"></div>
+                            <span id="modalRatingText"></span>
+                        </div>
+                    </div>
+                    
+                    <p id="modalDescription" class="course-description"></p>
+                    
+                    <div class="course-details">
+                        <h4><i class="fas fa-info-circle"></i> Detail Kursus</h4>
+                        <div class="detail-grid">
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Durasi: <strong id="modalDuration"></strong></span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-signal"></i>
+                                <span>Level: <strong id="modalLevel"></strong></span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-user"></i>
+                                <span>Instruktur: <strong id="modalInstructor"></strong></span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>Siswa: <strong id="modalStudents"></strong></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="technologies-section">
+                        <h4><i class="fas fa-code"></i> Teknologi yang Akan Dipelajari</h4>
+                        <div id="modalTechnologies" class="tech-tags"></div>
+                    </div>
+                    
+                    <div class="curriculum-preview">
+                        <h4><i class="fas fa-list"></i> Yang Akan Anda Pelajari</h4>
+                        <ul id="modalCurriculum">
+                            <li>Teknik pengembangan web modern</li>
+                            <li>Best practices dan standar industri</li>
+                            <li>Proyek hands-on dan aplikasi dunia nyata</li>
+                            <li>Panduan karir dan pengembangan portofolio</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="price-section">
+                        <div class="price-info">
+                            <span id="modalCurrentPrice" class="current-price"></span>
+                            <span id="modalOriginalPrice" class="original-price"></span>
+                            <span id="modalDiscount" class="discount-badge"></span>
+                        </div>
+                        <div class="action-buttons">
+                            <button id="addToCalculator" class="add-calculator-btn">
+                                <i class="fas fa-calculator"></i>
+                                Tambah ke Kalkulator
+                            </button>
+                            <button id="modalEnrollBtn" class="enroll-btn-modal">
+                                <i class="fas fa-play-circle"></i>
+                                Daftar Sekarang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <a href="index.html" class="footer-title">Cora</a>
+        <div class="footer-link">
+            <a href="contact.html">Hubungi Kami</a>
+            <a href="#">Bantuan FAQ</a>
+            <a href="#">Status Layanan</a>
+            <a href="#">Syarat dan Ketentuan</a>
+            <a href="#">Kebijakan Privasi</a>
+            <a href="#">Changelog</a>
+        </div>
+        <p>&copy 2025 Copyright All Right Reserved</p>
+    </footer>
+
+    <script src="scripts/product.js"></script>
+</body>
+</html>
