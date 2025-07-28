@@ -1,0 +1,372 @@
+/* Smooth scrolling behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Ensure proper spacing for anchor links */
+#about, #team, #values {
+    scroll-margin-top: 120px;
+}
+
+/* About main content wrapper */
+.about-main-content {
+    padding-top: 80px; /* Account for fixed navbar */
+}
+
+/* About specific styles */
+.about-hero {
+    color: #000;
+    padding: 120px 0 80px;
+    text-align: center;
+}
+
+
+.about-hero h1 {
+    color: #000;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.about-hero p {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+    line-height: 1.7;
+}
+
+.about-section {
+    padding: 80px 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (min-width: 769px) {
+    .about-section {
+        padding: 80px 4rem;
+    }
+}
+
+.about-content {
+    display: block;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.about-text {
+    max-width: none;
+    padding-right: 0;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 1.5rem;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #4a5568;
+    margin-bottom: 1.5rem;
+}
+
+.about-image {
+    background: linear-gradient(135deg, #f7fafc, #e2e8f0);
+    border-radius: 15px;
+    padding: 3rem;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.about-image h3 {
+    font-size: 1.8rem;
+    color: #667eea;
+    margin-bottom: 1rem;
+}
+
+.mission-section {
+    background: #f8fafc;
+    padding: 80px 0;
+}
+
+.mission-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10rem;
+}
+
+.mission-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.mission-header h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 1rem;
+}
+
+.mission-header p {
+    font-size: 1.2rem;
+    color: #4a5568;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.mission-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.mission-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    border-left: 4px solid #667eea;
+}
+
+.mission-card h3 {
+    font-size: 1.5rem;
+    color: #667eea;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.mission-card p {
+    color: #4a5568;
+    line-height: 1.7;
+}
+
+.team-section {
+    background-color: #f0f3f5;
+    padding: 80px 0;
+}
+
+.team-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10rem;
+}
+
+.team-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.team-header h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 1rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.team-member {
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.8);
+    cursor: default;
+    transition: all 0.3s ease;
+    transform: translate(0px, 0px);
+    display: inline-block;
+}
+
+.team-member:hover {
+    border: 2px solid #646464;
+    background-color: #DCEBFE;
+    box-shadow: none;
+    transform: translate(8px, 8px);
+}
+
+.member-avatar {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 700;
+}
+
+.member-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+}
+
+.member-role {
+    color: #667eea;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.member-bio {
+    color: #000;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.values-section {
+    background: #fff;
+    color: #000;
+    padding: 80px 0;
+}
+
+.values-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10rem;
+}
+
+.values-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.values-header h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.values-header p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.value-item {
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.8);
+    cursor: default;
+    transition: all 0.3s ease;
+    transform: translate(0px, 0px);
+    display: inline-block;
+    text-align: center;
+}
+
+.value-item:hover {
+    border: 2px solid #646464;
+    background-color: #DCEBFE;
+    box-shadow: none;
+    transform: translate(8px, 8px);
+}
+
+.value-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.value-item h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #667eea;
+}
+
+.value-item p {
+    line-height: 1.7;
+}
+
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .about-section {
+        padding: 80px 3rem;
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-section,
+    .mission-content,
+    .team-content,
+    .values-content {
+        padding: 60px 2rem;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-hero p {
+        font-size: 1.1rem;
+    }
+
+    .mission-header h2,
+    .team-header h2,
+    .values-header h2 {
+        font-size: 2.2rem;
+    }
+
+    .about-hero {
+        padding: 100px 0 60px;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Active navigation state */
+.nav-links a.active {
+    color: #4f46e5 !important;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .nav-links a.active {
+        color: #4f46e5 !important;
+        border-bottom-color: #4f46e5;
+        font-weight: 600;
+    }
+}
