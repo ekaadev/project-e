@@ -1,0 +1,160 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Panduan Lengkap Belajar JavaScript untuk Pemula",
+      "excerpt": "Mulai journey programming Anda dengan memahami dasar-dasar JavaScript. Dari variabel hingga function, semua dijelaskan secara mudah.",
+      "content": "JavaScript adalah bahasa pemrograman yang sangat populer dan mudah dipelajari...",
+      "author": "Ahmad Rizki",
+      "date": "2025-01-15",
+      "category": "JavaScript",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFTytJXaZrs_aCzd8IcEjptHQAD9sGTBoQxA&s",
+      "readTime": "8 menit",
+      "tags": ["javascript", "pemula", "web-development"]
+    },
+    {
+      "id": 2,
+      "title": "Membangun REST API dengan Node.js dan Express",
+      "excerpt": "Belajar cara membuat REST API yang scalable menggunakan Node.js dan Express framework dari nol hingga deploy.",
+      "content": "REST API adalah backbone dari aplikasi modern...",
+      "author": "Sarah Putri",
+      "date": "2025-01-12",
+      "category": "Backend",
+      "image": "https://caraguna.com/wp-content/uploads/2022/02/expressjs.png",
+      "readTime": "12 menit",
+      "tags": ["nodejs", "express", "api", "backend"]
+    },
+    {
+      "id": 3,
+      "title": "React Hooks: useState dan useEffect Explained",
+      "excerpt": "Memahami konsep React Hooks yang fundamental. Pelajari cara menggunakan useState dan useEffect dengan contoh praktis.",
+      "content": "React Hooks mengubah cara kita menulis komponen React...",
+      "author": "Budi Santoso",
+      "date": "2025-01-10",
+      "category": "React",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnWwWcHpya-SzuqZL8A0EDfnQPpo0Z3BQCCw&s",
+      "readTime": "10 menit",
+      "tags": ["react", "hooks", "frontend", "javascript"]
+    },
+    {
+      "id": 4,
+      "title": "Git dan GitHub: Version Control untuk Developer",
+      "excerpt": "Master version control dengan Git dan GitHub. Dari basic command hingga collaboration workflow yang professional.",
+      "content": "Version control adalah skill wajib untuk setiap developer...",
+      "author": "Dewi Lestari",
+      "date": "2025-01-08",
+      "category": "Tools",
+      "image": "https://image.web.id/images/git-vs-github.png",
+      "readTime": "15 menit",
+      "tags": ["git", "github", "version-control", "tools"]
+    },
+    {
+      "id": 5,
+      "title": "CSS Grid vs Flexbox: Kapan Menggunakan Mana?",
+      "excerpt": "Pahami perbedaan CSS Grid dan Flexbox. Pelajari kapan waktu yang tepat menggunakan masing-masing untuk layout website.",
+      "content": "CSS Grid dan Flexbox adalah dua teknologi layout modern...",
+      "author": "Rian Hidayat",
+      "date": "2025-01-05",
+      "category": "CSS",
+      "image": "https://www.webhozz.com/blog/wp-content/uploads/2017/09/gambar-CSS.jpg",
+      "readTime": "7 menit",
+      "tags": ["css", "grid", "flexbox", "layout"]
+    },
+    {
+      "id": 6,
+      "title": "Database Design: MySQL untuk Web Application",
+      "excerpt": "Belajar merancang database yang efisien untuk aplikasi web. Dari normalisasi hingga optimasi query MySQL.",
+      "content": "Database design yang baik adalah foundation aplikasi yang solid...",
+      "author": "Maya Sari",
+      "date": "2025-01-03",
+      "category": "Database",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBn9djlMmqMEnNhETDtAZUaVMxhO5jvldqqA&s",
+      "readTime": "14 menit",
+      "tags": ["mysql", "database", "sql", "backend"]
+    },
+    {
+      "id": 7,
+      "title": "TypeScript: JavaScript dengan Type Safety",
+      "excerpt": "Upgrade skill JavaScript Anda dengan TypeScript. Pelajari type system yang membuat code lebih reliable dan maintainable.",
+      "content": "TypeScript menambahkan type system ke JavaScript...",
+      "author": "Fajar Rahman",
+      "date": "2025-01-01",
+      "category": "TypeScript",
+      "image": "https://miro.medium.com/v2/resize:fit:1400/0*cy5S4LnOIInTBXed.png",
+      "readTime": "11 menit",
+      "tags": ["typescript", "javascript", "type-safety", "programming"]
+    },
+    {
+      "id": 8,
+      "title": "Responsive Web Design dengan CSS Media Queries",
+      "excerpt": "Membuat website yang responsive di semua device. Kuasai CSS media queries dan best practices untuk mobile-first design.",
+      "content": "Responsive design adalah standar industri modern...",
+      "author": "Linda Wijaya",
+      "date": "2024-12-28",
+      "category": "CSS",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT98LSlyHEMGVUcTATYLpYWuT0nwo-6dK3gYQ&s",
+      "readTime": "9 menit",
+      "tags": ["css", "responsive", "media-queries", "mobile"]
+    },
+    {
+      "id": 9,
+      "title": "Deployment: Dari Development ke Production",
+      "excerpt": "Panduan lengkap deploy aplikasi web ke production. Dari hosting selection hingga CI/CD pipeline setup.",
+      "content": "Deployment adalah tahap akhir dari development cycle...",
+      "author": "Eko Prasetyo",
+      "date": "2024-12-25",
+      "category": "DevOps",
+      "image": "https://image.web.id/images/devops.md.png",
+      "readTime": "16 menit",
+      "tags": ["deployment", "devops", "production", "hosting"]
+    },
+    {
+      "id": 10,
+      "title": "Asynchronous JavaScript: Promises dan Async/Await",
+      "excerpt": "Master asynchronous programming di JavaScript. Pahami Promises, async/await, dan cara handle asynchronous operations.",
+      "content": "Asynchronous programming adalah core concept di JavaScript...",
+      "author": "Sinta Maharani",
+      "date": "2024-12-22",
+      "category": "JavaScript",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqCCLPgNItiyCWEa1KoZKGLMpFNjss4pPnyQ&s",
+      "readTime": "13 menit",
+      "tags": ["javascript", "async", "promises", "programming"]
+    },
+    {
+      "id": 11,
+      "title": "Vue.js 3: Progressive JavaScript Framework",
+      "excerpt": "Kenalan dengan Vue.js 3 dan fitur-fitur barunya. Dari Composition API hingga performance improvements.",
+      "content": "Vue.js 3 membawa banyak improvement dan fitur baru...",
+      "author": "Dani Firmansyah",
+      "date": "2024-12-20",
+      "category": "Vue",
+      "image": "https://image.web.id/images/7cb22a8a9885468d96662f6ece61ceb2bc95666d-500x300.png",
+      "readTime": "10 menit",
+      "tags": ["vuejs", "javascript", "frontend", "framework"]
+    },
+    {
+      "id": 12,
+      "title": "Security Best Practices untuk Web Developers",
+      "excerpt": "Lindungi aplikasi web Anda dari serangan cyber. Pelajari security best practices yang harus diketahui setiap developer.",
+      "content": "Security adalah aspek yang tidak boleh diabaikan...",
+      "author": "Irwan Setiawan",
+      "date": "2024-12-18",
+      "category": "Security",
+      "image": "https://ids.ac.id/wp-content/uploads/2022/05/Web-Security.jpg",
+      "readTime": "18 menit",
+      "tags": ["security", "web-development", "cybersecurity", "best-practices"]
+    }
+  ],
+  "categories": [
+    "JavaScript",
+    "React",
+    "Backend",
+    "CSS",
+    "Database",
+    "TypeScript",
+    "Vue",
+    "DevOps",
+    "Security",
+    "Tools"
+  ]
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "question": "Apa saja kursus coding yang tersedia?",
+    "answer": "Kami menyediakan berbagai kursus coding mulai dari JavaScript, Python, React, Node.js, Mobile Development (Flutter & React Native), hingga Full Stack Development. Setiap kursus dirancang dengan kurikulum yang up-to-date dan project-based learning.",
+    "category": "kursus"
+  },
+  {
+    "id": 2,
+    "question": "Berapa lama waktu yang dibutuhkan untuk menyelesaikan satu kursus?",
+    "answer": "Durasi kursus bervariasi tergantung tingkat kesulitan dan jenis kursus. Umumnya: Basic (4-6 minggu), Intermediate (8-12 minggu), Advanced (12-16 minggu). Namun, Anda dapat belajar dengan kecepatan Anda sendiri karena akses kursus berlaku seumur hidup.",
+    "category": "waktu"
+  },
+  {
+    "id": 3,
+    "question": "Apakah tersedia mentor untuk membantu pembelajaran?",
+    "answer": "Ya! Setiap peserta akan mendapat akses ke mentor berpengalaman. Anda dapat melakukan sesi mentoring 1-on-1, grup discussion, dan code review. Mentor kami adalah praktisi industri dengan pengalaman minimal 5 tahun.",
+    "category": "mentor"
+  },
+  {
+    "id": 4,
+    "question": "Bagaimana sistem pembayaran dan refund policy?",
+    "answer": "Kami menerima pembayaran melalui transfer bank, e-wallet (OVO, GoPay, DANA), dan kartu kredit. Tersedia juga cicilan 0% untuk kursus tertentu. Refund 100% jika tidak puas dalam 7 hari pertama setelah pembelian.",
+    "category": "pembayaran"
+  },
+  {
+    "id": 5,
+    "question": "Apakah mendapat sertifikat setelah menyelesaikan kursus?",
+    "answer": "Ya, Anda akan mendapat sertifikat digital yang dapat diverifikasi setelah menyelesaikan semua modul dan project akhir. Sertifikat dapat dishare di LinkedIn dan platform profesional lainnya.",
+    "category": "sertifikat"
+  },
+  {
+    "id": 6,
+    "question": "Apakah ada bantuan untuk job placement setelah lulus?",
+    "answer": "Tentu! Kami memiliki program career support yang mencakup: review CV, mock interview, career guidance, dan akses ke job portal partner kami. Alumni kami tersebar di berbagai perusahaan teknologi terkemuka.",
+    "category": "karir"
+  },
+  {
+    "id": 7,
+    "question": "Bisakah mengakses materi kursus selamanya?",
+    "answer": "Ya, sekali membeli kursus, Anda dapat mengakses semua materi selamanya. Termasuk update materi terbaru dan fitur-fitur baru yang ditambahkan ke dalam kursus tersebut.",
+    "category": "akses"
+  },
+  {
+    "id": 8,
+    "question": "Apakah ada prerequisite untuk mengikuti kursus tertentu?",
+    "answer": "Untuk kursus basic, tidak ada prerequisite khusus. Untuk kursus intermediate dan advanced, kami merekomendasikan untuk menyelesaikan kursus basic terlebih dahulu atau memiliki pengalaman setara. Detail prerequisite tersedia di halaman deskripsi setiap kursus.",
+    "category": "prerequisite"
+  },
+  {
+    "id": 9,
+    "question": "Bagaimana jika mengalami kesulitan teknis saat belajar?",
+    "answer": "Tim technical support kami siap membantu 24/7 melalui chat, email, atau forum diskusi. Kami juga menyediakan troubleshooting guide dan video tutorial untuk masalah umum.",
+    "category": "teknis"
+  },
+  {
+    "id": 10,
+    "question": "Apakah tersedia kursus dalam bahasa Indonesia?",
+    "answer": "Ya, semua kursus kami tersedia dalam bahasa Indonesia dengan subtitle bahasa Inggris. Materi pembelajaran, assignment, dan komunikasi dengan mentor juga menggunakan bahasa Indonesia.",
+    "category": "bahasa"
+  }
+]
