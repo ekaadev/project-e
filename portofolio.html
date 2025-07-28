@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Cora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/portofolio.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-left">
+            <a href="index.html" class="logo">Cora</a>
+            <div class="hamburger" id="hamburger" aria-label="Toggle navigation menu" role="button" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="portofolio.html" class="active">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="mobile-cta">
+                    <a href="#" class="cta-button-mobile">Mulai Belajar</a>
+                </li>
+            </ul>
+        </div>
+        <div class="cta-button-container">
+            <a href="#" class="cta-button">Mulai Belajar</a>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <main>
+        <!-- Portfolio Hero Section -->
+        <section class="portfolio-hero">
+            <div class="hero-content">
+                <h1>Showcase Project Siswa</h1>
+                <p>Temukan karya-karya menakjubkan dari siswa Cora yang telah menguasai berbagai teknologi pemrograman</p>
+            </div>
+        </section>
+
+        <!-- Portfolio Filter -->
+        <section class="portfolio-section">
+            <div class="container">
+                <div class="filter-container">
+                    <h2>Filter Berdasarkan Kategori</h2>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">Semua Project</button>
+                        <button class="filter-btn" data-filter="web">Web Development</button>
+                        <button class="filter-btn" data-filter="mobile">Mobile App</button>
+                        <button class="filter-btn" data-filter="ai">AI/Machine Learning</button>
+                        <button class="filter-btn" data-filter="game">Game Development</button>
+                        <button class="filter-btn" data-filter="blockchain">Blockchain</button>
+                    </div>
+                </div>
+
+                <!-- Portfolio Grid -->
+                <div class="portfolio-grid" id="portfolioGrid">
+                    <!-- Portfolio items akan diisi oleh JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Project Detail Modal -->
+    <div class="project-modal" id="projectModal">
+        <div class="project-modal-content">
+            <div class="project-modal-header">
+                <h3>Detail Project</h3>
+                <button class="close-modal" id="closeModal">&times;</button>
+            </div>
+            <div class="project-modal-body" id="modalBody">
+                <!-- Modal content akan diisi oleh JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <a href="index.html" class="footer-title">Cora</a>
+        <div class="footer-link">
+            <a href="">Hubungi Kami</a>
+            <a href="">Bantuan FAQ</a>
+            <a href="">Status Layanan</a>
+            <a href="">Syarat dan Ketentuan</a>
+            <a href="">Kebijakan Privasi</a>
+            <a href="">Changelog</a>
+        </div>
+        <p>&copy 2025 Copyright All Right Reserved</p>
+    </footer>
+
+    <script src="scripts/portofolio.js"></script>
+</body>
+</html>
