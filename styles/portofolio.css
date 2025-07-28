@@ -241,11 +241,11 @@ nav {
     transform: translate(0px, 0px);
 }
 
-.portfolio-item:hover {
+/* .portfolio-item:hover {
     border: 2px solid #646464;
     box-shadow: none;
     transform: translate(8px, 8px);
-}
+} */
 
 .portfolio-item.hidden {
     display: none;
