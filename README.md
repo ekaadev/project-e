@@ -6,11 +6,34 @@ Cora Coding Interaktif adalah sebuah platform pembelajaran coding edutech yang i
 
 ## Fitur Utama Cora Coding Interaktif
 
-- **Pembelajaran Interaktif**: Modul pembelajaran yang dirancang untuk memberikan pengalaman belajar yang menyenangkan dan efektif.
-- **Tantangan Coding Real-Time**: Pengguna dapat berlatih coding dengan tant
-  angan yang menyesuaikan dengan tingkat kemampuan mereka.
-- **Proyek Praktis**: Kesempatan untuk menerapkan keterampilan coding dalam proyek nyata
-- **Komunitas Dukungan**: Akses ke forum komunitas untuk berdiskusi, bertanya, dan berbagi pengetahuan dengan sesama pembelajar.
-- **Responsive Design**: Platform yang dapat diakses dengan mudah melalui berbagai perangkat, termasuk desktop
-  dan mobile.
-- **Modul Beragam**: Dari dasar-dasar pemrograman hingga topik lanjutan seperti pengembangan web dan data science.
+### Interactive Coding Lab
+
+Praktik langsung dengan editor code online yang terintegrasi dengan compiler real-time. Dukungan 15+ bahasa pemrograman dengan auto-completion dan syntax highlighting
+
+### Personalized Learning Path
+
+Jalur pembelajaran yang disesuaikan dengan level dan tujuan karir Anda. AI-powered recommendation system untuk track pembelajaran optimal
+
+### Expert Mentorship
+
+Bimbingan langsung dari software engineer berpengalaman di industri. 1-on-1 mentoring session dan code review dari praktisi industri
+
+### Certification Program
+
+Sertifikat resmi yang diakui oleh perusahaan teknologi terkemuka. Partnership dengan 100+ perusahaan tech untuk job placement
+
+### Mobile Learning
+
+Belajar kapan saja, dimana saja dengan aplikasi mobile yang responsif. Offline mode dan progress sync across devices
+
+### Community Support
+
+Bergabung dengan komunitas developer aktif untuk saling berbagi dan belajar. Forum diskusi, hackathon, dan networking events regular.
+
+## How To Run ?
+
+```
+run with live server
+```
+
+Link Live Server: [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
